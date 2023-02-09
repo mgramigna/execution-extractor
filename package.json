@@ -1,8 +1,12 @@
 {
   "name": "execution-extractor",
+  "version": "0.0.1",
   "bin": {
     "exec-extract": "dist/index.js"
   },
+  "files": [
+    "dist/*"
+  ],
   "scripts": {
     "build": "tsc && copyfiles \"./template/**/*.{js,json}\" dist",
     "prepare": "npm run build"
