@@ -1,0 +1,9 @@
+{
+  "name": "{{ PROJECT_NAME }}",
+  "type": "module",
+  "main": "index.js",
+  "dependencies": {
+    "cql-exec-fhir": "^2.1.3",
+    "cql-execution": "{{ CQL_EXECUTION_VERSION }}"
+  }
+}
