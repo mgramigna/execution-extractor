@@ -43,4 +43,8 @@ psource.loadBundles([patient]);
 
 const res = executor.exec(psource);
 
-console.log(JSON.stringify(res.patientResults, null, 2));
+if (typeof res.then === "function") {
+  console.log(JSON.stringify((await res).patientResults, null, 2));
+} else {
+  console.log(JSON.stringify(res.patientResults, null, 2));
+}
